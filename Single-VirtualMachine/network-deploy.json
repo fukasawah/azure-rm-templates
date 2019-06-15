@@ -127,11 +127,11 @@
     "outputs": {
         "networkInterfaceCardId": {
             "type": "string",
-            "value": "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaceCardName'))]"
+            "value": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkInterfaces', parameters('networkInterfaceCardName'))]"
         },
         "networkSecurityGroupId": {
             "type": "string",
-            "value": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
+            "value": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
         }
     }
 }
