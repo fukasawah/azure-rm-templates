@@ -10,7 +10,7 @@
             "type": "string"
         },
         "vnetIpRange": {
-            "type": "string"
+            "type": "array"
         },
         "networkInterfaceCardName": {
             "type": "string"
