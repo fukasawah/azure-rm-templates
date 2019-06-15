@@ -91,7 +91,7 @@
                     }
                 ],
                 "networkSecurityGroup": {
-                    "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', concat(variables('nsgPrefix'), 'front'))]"
+                    "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
                 }
             },
             "tags": "[parameters('commonTags')]"
