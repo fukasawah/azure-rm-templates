@@ -78,10 +78,10 @@
             "properties": {
                 "ipConfigurations": [
                     {
-                        "name": "ipconfig",
+                        "name": "ipconfig1",
                         "properties": {
                             "subnet": {
-                                "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/virtualNetworks/subnets', concat(parameters('vnetName'), '/', parameters('subnetName')))]"
+                                "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnetName'))]"
                             },
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIpAddress": {
